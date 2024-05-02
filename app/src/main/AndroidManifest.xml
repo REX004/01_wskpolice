@@ -29,10 +29,10 @@
         </provider>
 
         <activity
-            android:name=".session1.LaunchScreen"
+            android:name=".session1.SignActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".session1.LaunchScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
