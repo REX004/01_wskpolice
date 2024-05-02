@@ -113,31 +113,12 @@
             android:text="8"
             android:textColor="#805AAE"
             android:textSize="16sp"
+
             app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view" />
 
-        <TextView
-            android:id="@+id/captcha2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-            android:textColor="#805AAE"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toStartOf="@+id/captcha3"
-            app:layout_constraintStart_toEndOf="@+id/captcha1"
-            app:layout_constraintTop_toTopOf="@+id/view" />
-        <TextView
-            android:id="@+id/captcha3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-            android:textColor="#805AAE"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

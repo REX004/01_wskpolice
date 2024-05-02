@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">01_wskpolice</string>
+    <string name="about_us">    WSK Police - Оперативно-розыскная деятельность - мероприятия, выполняемые гласно и негласно уполномоченными на это государственными  органами с целью выявить, пресечь или раскрыть преступление, отыскать скрывающихся и пропавших без вести людей, установить имущество, подлежащее конфискации, добыть информацию о событиях и деяниях, опасных для государства.
+</string>
+    <string name="about_us2"> 2019 "WSK Police" Разработано с любовью в WorldSkills Russia compition F6 Mobile Application Development</string>
+
+
 </resources>
