@@ -1,10 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".session1.MainSignedActivity">
+    tools:context=".session1.MainGuestActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_img"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+    </Toolbar>
+    <LinearLayout
+        android:id="@+id/criminalcaseLL"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/criminalcase_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Criminal Cases"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/departmntsLL"
+        android:layout_marginTop="-0.8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/departments_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Departments"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wantedLL"
+        android:layout_marginTop="-0.8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/wanteds_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Wanted"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paintLL"
+        android:layout_marginTop="-0.8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/detectived_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Detectives"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/photorobotLL"
+        android:layout_marginTop="-0.8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/photorobots_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="PhotoRobot"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutUsLL"
+        android:layout_marginTop="180dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/about_s_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="About Us"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logoutLL"
+        android:layout_marginTop="-0.8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_menu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/logout_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Logout"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.a01_wskpolice.session1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,12 @@ class PhotoRobotsActivity : AppCompatActivity() {
         binding = ActivityPhotoRobotsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backImg.setOnClickListener {
+            onBackPressed()
+        }
+        binding.newphotoRobotImg.setOnClickListener {
+            startActivity(Intent(this, NewPhotoRobotsActivity::class.java))
+        }
 
     }
 }

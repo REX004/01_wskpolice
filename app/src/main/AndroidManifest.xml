@@ -15,6 +15,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".session1.WantedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".session1.PaintActivity"
+            android:exported="false" />
+        <activity
             android:name=".session1.NewPhotoRobotsActivity"
             android:exported="false" />
         <activity

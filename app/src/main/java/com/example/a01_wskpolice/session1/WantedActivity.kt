@@ -6,17 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.a01_wskpolice.R
-import com.example.a01_wskpolice.databinding.ActivityNewPhotoRobotsBinding
+import com.example.a01_wskpolice.databinding.ActivityWantedBinding
 
-class NewPhotoRobotsActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityNewPhotoRobotsBinding
+class WantedActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityWantedBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityNewPhotoRobotsBinding.inflate(layoutInflater)
+        binding = ActivityWantedBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.backImg.setOnClickListener {
-            onBackPressed()
-        }
     }
 }

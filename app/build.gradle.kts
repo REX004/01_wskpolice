@@ -74,7 +74,6 @@ dependencies {
 
     implementation ("com.github.Dhaval2404:ColorPicker:2.3")
 
-    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
 
 }

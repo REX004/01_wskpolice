@@ -22,10 +22,117 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Main"
+            android:text="New PhotoRobot"
             android:textColor="@color/white"
             android:textSize="22sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_img"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"/>
 
     </Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/newPhotoRobotContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arroe_background"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/phptorobotVV1"
+                android:layout_width="350dp"
+                android:layout_height="111dp"/>
+
+            <ImageView
+                android:rotation="180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arroe_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arroe_background"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/phptorobotVV2"
+                android:layout_width="350dp"
+                android:layout_height="111dp"/>
+
+            <ImageView
+                android:rotation="180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arroe_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arroe_background"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/phptorobotVV3"
+                android:layout_width="350dp"
+                android:layout_height="111dp"/>
+
+            <ImageView
+                android:rotation="180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/arroe_background"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/okBT"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        style="@style/Platform.MaterialComponents"
+        android:backgroundTint="@color/green"/>
+
 
 </LinearLayout>

@@ -22,6 +22,12 @@ class MainGuestActivity : AppCompatActivity() {
         binding.backImg.setOnClickListener {
             onBackPressed()
         }
+        binding.photorobotLL.setOnClickListener {
+            startActivity(Intent(this, PhotoRobotsActivity::class.java))
+        }
+        binding.paintLL.setOnClickListener {
+            startActivity(Intent(this, PaintActivity::class.java))
+        }
 
     }
 }
