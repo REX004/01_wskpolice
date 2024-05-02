@@ -1,11 +1,13 @@
 package com.example.a01_wskpolice.session1
 
 import android.content.Intent
+import android.net.ConnectivityManager
 import android.nfc.Tag
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.a01_wskpolice.databinding.SignActivityBinding
 import okhttp3.Call
@@ -37,6 +39,9 @@ class SignActivity : AppCompatActivity() {
                 binding.captchaEnterTXT.visibility = View.VISIBLE
                 binding.okBT.visibility = View.VISIBLE
             }else {
+//                if (!isNetworkAvailable()){
+//                    showDialog("Network error")
+//                }
                 val login = binding.loginET.text.toString()
                 val password = binding.passwordET.text.toString()
                 authorizeUser(login, password)
@@ -59,6 +64,7 @@ class SignActivity : AppCompatActivity() {
                     val password = binding.passwordET.text.toString()
                     authorizeUser(login, password)
                 } else {
+                    showDialog("Invalid captcha")
                     captcha = generateCaptcha()
                     binding.captchaET.text.clear()
 
@@ -128,6 +134,26 @@ class SignActivity : AppCompatActivity() {
             }
 
         })
+    }
+    private fun showDialog(message: String){
+        AlertDialog.Builder(this)
+            .setMessage(message)
+            .setPositiveButton("Try again") { dialog, _ ->
+                binding.captchaET.text.clear()
+                dialog.dismiss()
+
+                if (!isNetworkAvailable()){
+                    showDialog(message)
+                }
+            }
+            .setCancelable(false)
+            .show()
+
+    }
+    private fun isNetworkAvailable() : Boolean{
+        val connectivityManager = getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
+        val networkInfo = connectivityManager.activeNetworkInfo
+        return networkInfo != null && networkInfo.isAvailable
     }
 
 }
