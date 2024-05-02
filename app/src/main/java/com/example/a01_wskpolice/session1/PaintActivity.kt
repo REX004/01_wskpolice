@@ -32,10 +32,12 @@ class PaintActivity : AppCompatActivity() {
 
         }
 
+
     }
     private fun getSize(){
         AlertDialog.Builder(this)
             .setMessage("Choose")
+
     }
 
 }
