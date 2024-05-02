@@ -1,4 +1,4 @@
-package com.example.a01_wskpolice.session1
+package com.example.a01_wskpolice.session2
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,14 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.a01_wskpolice.R
-import com.example.a01_wskpolice.databinding.ActivityWantedBinding
 
-class WantedActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityWantedBinding
+class ShowDepMapActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWantedBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
     }
 }

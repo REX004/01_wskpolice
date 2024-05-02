@@ -8,6 +8,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.a01_wskpolice.R
 import com.example.a01_wskpolice.databinding.ActivityMainGuestBinding
+import com.example.a01_wskpolice.session2.DepartmentsActivity
+import com.example.a01_wskpolice.session2.WantedActivity
 
 class MainGuestActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainGuestBinding
@@ -28,6 +30,11 @@ class MainGuestActivity : AppCompatActivity() {
         binding.paintLL.setOnClickListener {
             startActivity(Intent(this, PaintActivity::class.java))
         }
-
+        binding.wantedLL.setOnClickListener {
+            startActivity(Intent(this, WantedActivity::class.java))
+        }
+        binding.departmntsLL.setOnClickListener {
+            startActivity(Intent(this, DepartmentsActivity::class.java))
+        }
     }
 }

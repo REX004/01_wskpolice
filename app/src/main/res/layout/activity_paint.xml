@@ -26,6 +26,7 @@
             android:textColor="@color/white"
             android:textSize="22sp"/>
         <ImageView
+            android:id="@+id/shareImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/share_img"
@@ -68,6 +69,6 @@
     <com.mihir.drawingcanvas.drawingView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/painter"/>
+        android:id="@+id/drawingView"/>
 
 </LinearLayout>

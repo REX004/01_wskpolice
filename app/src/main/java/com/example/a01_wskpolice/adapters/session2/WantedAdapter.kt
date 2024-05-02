@@ -2,14 +2,17 @@ package com.example.a01_wskpolice.adapters.session2
 
 import android.content.Context
 import android.content.Intent
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.a01_wskpolice.data.Department
 import com.example.a01_wskpolice.data.Wanted
 import com.example.a01_wskpolice.databinding.WantedItemBinding
+import com.example.a01_wskpolice.session2.ShowWantedActivity
 
 
 class WantedAdapter(private val context: Context) : ListAdapter<Wanted, WantedAdapter.Holder> (

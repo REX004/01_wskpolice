@@ -8,33 +8,26 @@
         android:id="@+id/card"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/choseCB"
-            android:layout_marginLeft="10dp"
-            android:layout_width="30dp"
-            android:visibility="gone"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:layout_marginLeft="10dp"
-            android:id="@+id/imagePerson"
-            android:layout_width="33dp"
-            android:layout_height="33dp"/>
         <TextView
+            android:paddingTop="10dp"
+            android:textSize="16sp"
             android:textColor="@color/black"
-            android:layout_marginLeft="7dp"
+            android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lopuhov"
             android:id="@+id/firstName"
             />
         <TextView
-            android:textColor="@color/black"
-            android:layout_marginLeft="8dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
             android:text="Hello"
+            android:textColor="#757575"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/lastName"
