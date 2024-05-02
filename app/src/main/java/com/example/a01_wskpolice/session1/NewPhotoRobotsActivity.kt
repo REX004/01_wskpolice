@@ -6,16 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.a01_wskpolice.R
-import com.example.a01_wskpolice.databinding.ActivityPhotoRobotsBinding
+import com.example.a01_wskpolice.databinding.ActivityNewPhotoRobotsBinding
 
-
-class PhotoRobotsActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityPhotoRobotsBinding
+class NewPhotoRobotsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityNewPhotoRobotsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPhotoRobotsBinding.inflate(layoutInflater)
+        binding = ActivityNewPhotoRobotsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
     }
 }

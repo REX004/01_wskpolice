@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".session1.PhotoRobotsActivity">
+    android:layout_height="match_parent"
+    tools:context=".session1.NewPhotoRobotsActivity">
 
     <Toolbar
         android:layout_width="match_parent"
@@ -22,21 +22,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PhotoRobots"
+            android:text="Main"
             android:textColor="@color/white"
             android:textSize="22sp"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/plus_img"
-            android:layout_gravity="end"
-            android:layout_marginRight="20dp"/>
 
     </Toolbar>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageRV"/>
 
 </LinearLayout>

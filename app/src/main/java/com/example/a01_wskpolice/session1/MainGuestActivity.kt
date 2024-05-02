@@ -19,6 +19,9 @@ class MainGuestActivity : AppCompatActivity() {
         binding.aboutUsLL.setOnClickListener {
             startActivity(Intent(this, AboutUsActivity::class.java))
         }
+        binding.backImg.setOnClickListener {
+            onBackPressed()
+        }
 
     }
 }
